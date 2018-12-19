@@ -14,7 +14,7 @@ public class Main {
 		Thread[] arrThreadsC = new Thread[4];
 
 		for (int j = 0; j < 5; j++) {
-			arrThreads[j] = new Thread(new Producer("Mensaje"), "Producer " + j);
+			arrThreads[j] = new Thread(new Producer(NAME,"Mensaje"), "Producer " + j);
 			arrThreads[j].start();
 		}
 		for (int d = 0; d < 4; d++) {
